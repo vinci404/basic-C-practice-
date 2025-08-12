@@ -1,5 +1,5 @@
 # another i made it i guess
-.C
+```c
 #include <stdio.h>
 #include <stdbool.h>
 
