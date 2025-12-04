@@ -94,3 +94,48 @@ int main()
         
     return 0;
 }
+
+
+// another activity for user input, can't believe i made this
+
+#include <stdio.h>
+
+int main() {
+    printf("=============================================\n");
+    printf("\t PERSONAL INFORMATION FORM \t\n");
+    printf("=============================================\n");
+    
+    char Fname[20];
+    printf("\nEnter your First name: ");
+    scanf("%s", Fname);
+    
+    char Lname[20];
+    printf("\nEnter your Last name: ");
+    scanf("%s", Lname);
+    
+    char num[15];
+    printf("\nEnter your number: ");
+    scanf("%s", num);
+    
+    printf("\n---------- Date of Birth ---------- \n");
+    
+    char month[15];
+    int day, year;
+    
+    printf("\nMonth: ");
+    scanf("%s", month);
+    printf("\nDay: ");
+    scanf("%d", &day);
+    printf("\nYear: ");
+    scanf("%d", &year);
+    
+    printf("=============================================\n");
+    printf("\t PERSONAL INFORMATION \t\n");
+    printf("=============================================\n");
+
+    printf("\nName\t\t: %s %s", Fname, Lname);
+    printf("\nDate of Birth\t: %s %d, %d", month, day, year);
+    printf("\nMobile number\t: %s", num);
+    
+    return 0;
+}
